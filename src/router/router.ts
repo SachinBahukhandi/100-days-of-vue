@@ -3,6 +3,7 @@ import Login from '../views/Login.vue';
 import Interpolation from '../views/Interpolation.vue';
 import Computed from '../views/Computed.vue';
 import Bindings from '../views/Bindings.vue';
+import Game1 from '../views/Game1.vue';
 
 export default [
     {
@@ -29,5 +30,10 @@ export default [
         path: '/bindings',
         name: 'Bindings',
         component: Bindings,
+    },
+    {
+        path: '/game1',
+        name: 'Game 1',
+        component: Game1,
     },
 ];
