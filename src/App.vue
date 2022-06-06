@@ -1,14 +1,9 @@
 <script setup lang="ts">
-import Header from './components/Header.vue';
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <div class="h-screen w-full antialiased
-      bg-gradient-to-r
-      from-sky-100
-      via-sky-50
-      to-sky-50">
-    <Header></Header>
+  <div>
     <router-view></router-view>
   </div>
 </template>

@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="container mx-auto">
+    <div>
       <!-- ... -->
+      <h1>Hello 123</h1>
     </div>
   </div>
 </template>
