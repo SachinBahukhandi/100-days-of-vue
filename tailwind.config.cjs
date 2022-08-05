@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'source-code-pro': ['Source Code Pro', 'monospace'],
+        'lobster':['Lobster', 'cursive']
       },
     },
     container: {

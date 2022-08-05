@@ -1,19 +1,103 @@
 <template>
-    <div class="container grid-container grid grid-cols-5">
-        <div class="item1 col-span-4 text-center mt-2 p-2">
-            <h4>Stackoverflow.com</h4>
-        </div>
-        <div class="item2 col-span-1">
-            <p>Stackoverflow.com</p>
-        </div>
+  <div class="flex space-x-2 w-3/3">
+    <div class="w-2/3 flex justify-center items-center m-2">
+      <h1 class="logo-name">Sachin Bahukhandi</h1>
     </div>
+    <div class="w-1/3 flex justify-center items-center m-2">
+      <img
+        class="object-cover w-20 h-20"
+        src="https://www.gravatar.com/avatar/87a605a71f2053e784c80018bc619656?s=256&d=identicon&r=PG&f=1"
+      />
+    </div>
+  </div>
+  <div class="flex flex-wrap">
+    <div class="w-full">
+      <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+          <a
+            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            v-on:click="toggleTabs(1)"
+            v-bind:class="{
+              'text-red-600 bg-white': openTab !== 1,
+              'text-white bg-red-600': openTab === 1,
+            }"
+          >
+            Profile
+          </a>
+        </li>
+        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+          <a
+            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            v-on:click="toggleTabs(2)"
+            v-bind:class="{
+              'text-red-600 bg-white': openTab !== 2,
+              'text-white bg-red-600': openTab === 2,
+            }"
+          >
+            Settings
+          </a>
+        </li>
+        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+          <a
+            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            v-on:click="toggleTabs(3)"
+            v-bind:class="{
+              'text-red-600 bg-white': openTab !== 3,
+              'text-white bg-red-600': openTab === 3,
+            }"
+          >
+            Options
+          </a>
+        </li>
+      </ul>
+      <div
+        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+      >
+        <div class="px-4 py-5 flex-auto">
+          <div class="tab-content tab-space">
+            <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }">
+              <p>
+                Collaboratively administrate empowered markets via plug-and-play
+                networks. Dynamically procrastinate B2C users after installed
+                base benefits.
+                <br />
+                <br />
+                Dramatically visualize customer directed convergence without
+                revolutionary ROI.
+              </p>
+            </div>
+            <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }">
+              <p>
+                Completely synergize resource taxing relationships via premier
+                niche markets. Professionally cultivate one-to-one customer
+                service with robust ideas.
+                <br />
+                <br />
+                Dynamically innovate resource-leveling customer service for
+                state of the art customer service.
+              </p>
+            </div>
+            <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }">
+              <p>
+                Efficiently unleash cross-media information without cross-media
+                value. Quickly maximize timely deliverables for real-time
+                schemas.
+                <br />
+                <br />
+                Dramatically maintain clicks-and-mortar solutions without
+                functional solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-    setup() {
-
-    },
-})
+  setup() {},
+});
 </script>
