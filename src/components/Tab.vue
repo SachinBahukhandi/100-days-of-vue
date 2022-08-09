@@ -1,7 +1,8 @@
 <template>
-  <ul>
+  <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
     <li
-      v-for="item in items" :key="item.key"
+      v-for="item in items"
+      :key="item.key"
       class="-mb-px mr-2 last:mr-0 flex-auto text-center"
     >
       <a
@@ -12,8 +13,13 @@
           'text-white bg-red-600': openTab === 1,
         }"
       >
-        Profile
+        {{item}}
       </a>
     </li>
   </ul>
 </template>
+<script lang="ts" setup>
+const props = defineProps<{
+ items: Array<Object>
+}>();
+</script>
