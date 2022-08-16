@@ -3,6 +3,7 @@
 
 <template>
   <div class="container mx-auto">
+    <h1>Hello</h1>
     <router-view></router-view>
   </div>
 </template>
