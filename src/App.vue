@@ -3,7 +3,7 @@ import Header from './components/Header.vue';
 </script>
 
 <template>
-  <div class="h-screen w-full bg-gray-900">
+  <div class="h-screen w-full bg-teal-50">
     <Header></Header>
     <router-view></router-view>
   </div>
